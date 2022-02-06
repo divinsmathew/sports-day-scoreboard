@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.Heading = new System.Windows.Forms.Label();
+            this.SubHeading = new System.Windows.Forms.Label();
+            this.HeadingsHolder = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.GRajputs = new System.Windows.Forms.GroupBox();
             this.RajputsScore = new System.Windows.Forms.Label();
@@ -66,38 +66,38 @@
             this.ScoreWrapper.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // Heading
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 47.75F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.Crimson;
-            this.label1.Location = new System.Drawing.Point(236, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(607, 86);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "PORKKALAM 2K19";
+            this.Heading.AutoSize = true;
+            this.Heading.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.Heading.Font = new System.Drawing.Font("Segoe UI", 47.75F, System.Drawing.FontStyle.Bold);
+            this.Heading.ForeColor = System.Drawing.Color.Crimson;
+            this.Heading.Location = new System.Drawing.Point(236, 0);
+            this.Heading.Name = "Heading";
+            this.Heading.Size = new System.Drawing.Size(607, 86);
+            this.Heading.TabIndex = 0;
+            this.Heading.Text = "PORKKALAM 2K19";
             // 
-            // label2
+            // SubHeading
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 38F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.Color.Crimson;
-            this.label2.Location = new System.Drawing.Point(297, 79);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(426, 59);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Final Scoreboard";
-            this.label2.DoubleClick += new System.EventHandler(this.label2_DoubleClick);
+            this.SubHeading.AutoSize = true;
+            this.SubHeading.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.SubHeading.Font = new System.Drawing.Font("Microsoft Sans Serif", 38F, System.Drawing.FontStyle.Bold);
+            this.SubHeading.ForeColor = System.Drawing.Color.Crimson;
+            this.SubHeading.Location = new System.Drawing.Point(297, 79);
+            this.SubHeading.Name = "SubHeading";
+            this.SubHeading.Size = new System.Drawing.Size(426, 59);
+            this.SubHeading.TabIndex = 1;
+            this.SubHeading.Text = "Final Scoreboard";
+            this.SubHeading.DoubleClick += new System.EventHandler(this.label2_DoubleClick);
             // 
-            // label3
+            // HeadingsHolder
             // 
-            this.label3.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.label3.Location = new System.Drawing.Point(-1, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(1130, 149);
-            this.label3.TabIndex = 2;
+            this.HeadingsHolder.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.HeadingsHolder.Location = new System.Drawing.Point(-3, 0);
+            this.HeadingsHolder.Name = "HeadingsHolder";
+            this.HeadingsHolder.Size = new System.Drawing.Size(1113, 149);
+            this.HeadingsHolder.TabIndex = 2;
             // 
             // label4
             // 
@@ -346,12 +346,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.ClientSize = new System.Drawing.Size(1604, 993);
+            this.ClientSize = new System.Drawing.Size(1110, 852);
             this.Controls.Add(this.ScoreWrapper);
             this.Controls.Add(this.LiveIndicator);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.SubHeading);
+            this.Controls.Add(this.Heading);
+            this.Controls.Add(this.HeadingsHolder);
             this.Name = "Form1";
             this.Text = "Sports Meet 2k19";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -379,9 +379,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label Heading;
+        private System.Windows.Forms.Label SubHeading;
+        private System.Windows.Forms.Label HeadingsHolder;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.GroupBox GRajputs;

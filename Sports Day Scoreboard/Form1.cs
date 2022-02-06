@@ -15,20 +15,20 @@ namespace Sports_Day_Scoreboard
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            this.TopMost = true;
-            this.FormBorderStyle = FormBorderStyle.None;
-            this.WindowState = FormWindowState.Maximized;
+            TopMost = true;
+            FormBorderStyle = FormBorderStyle.None;
+            WindowState = FormWindowState.Maximized;
 
             Label8_Click(null, null);
         }
 
         private void Form1_SizeChanged(object sender, EventArgs e)
         {
-            label1.Left = this.Width / 2 - label1.Width / 2;
-            label2.Left = this.Width / 2 - label2.Width / 2 + 10;
-            LiveIndicator.Left = label2.Left - LiveIndicator.Width + 15;
-            label3.Width = Width;
-            ScoreWrapper.Width = label3.Width;
+            Heading.Left = this.Width / 2 - Heading.Width / 2;
+            SubHeading.Left = this.Width / 2 - SubHeading.Width / 2 + 10;
+            LiveIndicator.Left = SubHeading.Left - LiveIndicator.Width + 15;
+            HeadingsHolder.Width = Width;
+            ScoreWrapper.Width = HeadingsHolder.Width;
             ScoreWrapper.Height = Height - 149;
 
             GRajputs.Left = (Width / 4) * 1 - GRajputs.Width / 2 - 60;
