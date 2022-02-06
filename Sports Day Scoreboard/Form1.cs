@@ -29,12 +29,19 @@ namespace Sports_Day_Scoreboard
             LiveIndicator.Left = label2.Left - LiveIndicator.Width + 15;
             label3.Width = Width;
             ScoreWrapper.Width = label3.Width;
+            ScoreWrapper.Height = Height - 149;
 
             GRajputs.Left = (Width / 4) * 1 - GRajputs.Width / 2 - 60;
             GAryans.Left = (Width / 4) * 2 - GAryans.Width / 2;
             GVikings.Left = (Width / 4) * 3 - GVikings.Width / 2 + 60;
             GMughals.Left = (Width / 3) * 1 - GMughals.Width / 2;
             GSpartans.Left = (Width / 3) * 2 - GSpartans.Width / 2;
+
+            GRajputs.Top = (ScoreWrapper.Height / 4) - (GRajputs.Height / 2) + 60;
+            GAryans.Top = (ScoreWrapper.Height / 4) - (GAryans.Height / 2) + 60;
+            GVikings.Top = (ScoreWrapper.Height / 4) - (GVikings.Height / 2) + 60;
+            GMughals.Top = (ScoreWrapper.Height / 4)  *3 - (GMughals.Height / 2) - 60;
+            GSpartans.Top = (ScoreWrapper.Height / 4)  *3 - (GSpartans.Height / 2) - 60;
         }
 
         private void label2_DoubleClick(object sender, EventArgs e)
@@ -76,6 +83,11 @@ namespace Sports_Day_Scoreboard
             }
             else
                 LiveIndicator.ForeColor = Color.Red;
+        }
+
+        private void ScoreWrapper_Paint(object sender, PaintEventArgs e)
+        {   
+           // ScoreWrapper.Graphics.Clear(box.Parent.BackColor);
         }
     }
 }

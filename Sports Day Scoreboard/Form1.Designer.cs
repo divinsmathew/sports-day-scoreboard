@@ -339,6 +339,7 @@
             this.ScoreWrapper.Size = new System.Drawing.Size(1110, 704);
             this.ScoreWrapper.TabIndex = 16;
             this.ScoreWrapper.TabStop = false;
+            this.ScoreWrapper.Paint += new System.Windows.Forms.PaintEventHandler(this.ScoreWrapper_Paint);
             // 
             // Form1
             // 
