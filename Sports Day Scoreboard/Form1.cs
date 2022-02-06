@@ -79,7 +79,7 @@ namespace Sports_Day_Scoreboard
                 MughalsScore.Text = scores[3];
                 SpartansScore.Text = scores[4];
 
-                LiveIndicator.ForeColor = Color.LimeGreen;
+                LiveIndicator.ForeColor = Color.ForestGreen;
             }
             else
                 LiveIndicator.ForeColor = Color.Red;

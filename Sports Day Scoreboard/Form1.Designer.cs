@@ -35,7 +35,6 @@
             this.GRajputs = new System.Windows.Forms.GroupBox();
             this.RajputsScore = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.LiveIndicator = new System.Windows.Forms.Label();
             this.GMughals = new System.Windows.Forms.GroupBox();
             this.MughalsScore = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -53,6 +52,7 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label14 = new System.Windows.Forms.Label();
             this.ScoreWrapper = new System.Windows.Forms.GroupBox();
+            this.LiveIndicator = new System.Windows.Forms.Label();
             this.GRajputs.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.GMughals.SuspendLayout();
@@ -69,10 +69,10 @@
             // Heading
             // 
             this.Heading.AutoSize = true;
-            this.Heading.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.Heading.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.Heading.Font = new System.Drawing.Font("Segoe UI", 47.75F, System.Drawing.FontStyle.Bold);
-            this.Heading.ForeColor = System.Drawing.Color.Crimson;
-            this.Heading.Location = new System.Drawing.Point(236, 0);
+            this.Heading.ForeColor = System.Drawing.Color.DarkBlue;
+            this.Heading.Location = new System.Drawing.Point(236, -2);
             this.Heading.Name = "Heading";
             this.Heading.Size = new System.Drawing.Size(607, 86);
             this.Heading.TabIndex = 0;
@@ -81,19 +81,20 @@
             // SubHeading
             // 
             this.SubHeading.AutoSize = true;
-            this.SubHeading.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.SubHeading.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.SubHeading.Font = new System.Drawing.Font("Microsoft Sans Serif", 38F, System.Drawing.FontStyle.Bold);
             this.SubHeading.ForeColor = System.Drawing.Color.Crimson;
-            this.SubHeading.Location = new System.Drawing.Point(297, 79);
+            this.SubHeading.Location = new System.Drawing.Point(336, 84);
             this.SubHeading.Name = "SubHeading";
-            this.SubHeading.Size = new System.Drawing.Size(426, 59);
+            this.SubHeading.Size = new System.Drawing.Size(297, 59);
             this.SubHeading.TabIndex = 1;
-            this.SubHeading.Text = "Final Scoreboard";
+            this.SubHeading.Text = "Scoreboard";
             this.SubHeading.DoubleClick += new System.EventHandler(this.label2_DoubleClick);
             // 
             // HeadingsHolder
             // 
-            this.HeadingsHolder.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.HeadingsHolder.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.HeadingsHolder.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.HeadingsHolder.Location = new System.Drawing.Point(-3, 0);
             this.HeadingsHolder.Name = "HeadingsHolder";
             this.HeadingsHolder.Size = new System.Drawing.Size(1113, 149);
@@ -141,19 +142,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
-            // 
-            // LiveIndicator
-            // 
-            this.LiveIndicator.AutoSize = true;
-            this.LiveIndicator.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.LiveIndicator.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Bold);
-            this.LiveIndicator.ForeColor = System.Drawing.Color.Red;
-            this.LiveIndicator.Location = new System.Drawing.Point(708, 84);
-            this.LiveIndicator.Name = "LiveIndicator";
-            this.LiveIndicator.Size = new System.Drawing.Size(71, 51);
-            this.LiveIndicator.TabIndex = 15;
-            this.LiveIndicator.Text = "⚫";
-            this.LiveIndicator.Click += new System.EventHandler(this.Label8_Click);
             // 
             // GMughals
             // 
@@ -341,15 +329,28 @@
             this.ScoreWrapper.TabStop = false;
             this.ScoreWrapper.Paint += new System.Windows.Forms.PaintEventHandler(this.ScoreWrapper_Paint);
             // 
+            // LiveIndicator
+            // 
+            this.LiveIndicator.AutoSize = true;
+            this.LiveIndicator.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.LiveIndicator.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Bold);
+            this.LiveIndicator.ForeColor = System.Drawing.Color.ForestGreen;
+            this.LiveIndicator.Location = new System.Drawing.Point(636, 88);
+            this.LiveIndicator.Name = "LiveIndicator";
+            this.LiveIndicator.Size = new System.Drawing.Size(71, 51);
+            this.LiveIndicator.TabIndex = 15;
+            this.LiveIndicator.Text = "⚫";
+            this.LiveIndicator.Click += new System.EventHandler(this.Label8_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.ClientSize = new System.Drawing.Size(1110, 852);
+            this.Controls.Add(this.SubHeading);
             this.Controls.Add(this.ScoreWrapper);
             this.Controls.Add(this.LiveIndicator);
-            this.Controls.Add(this.SubHeading);
             this.Controls.Add(this.Heading);
             this.Controls.Add(this.HeadingsHolder);
             this.Name = "Form1";
@@ -385,7 +386,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.GroupBox GRajputs;
-        private System.Windows.Forms.Label LiveIndicator;
         private System.Windows.Forms.Label RajputsScore;
         private System.Windows.Forms.GroupBox GMughals;
         private System.Windows.Forms.Label MughalsScore;
@@ -404,6 +404,7 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.GroupBox ScoreWrapper;
+        private System.Windows.Forms.Label LiveIndicator;
     }
 }
 
