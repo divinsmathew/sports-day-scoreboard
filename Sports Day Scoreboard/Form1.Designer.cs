@@ -72,7 +72,7 @@
             this.Heading.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.Heading.Font = new System.Drawing.Font("Segoe UI", 47.75F, System.Drawing.FontStyle.Bold);
             this.Heading.ForeColor = System.Drawing.Color.DarkBlue;
-            this.Heading.Location = new System.Drawing.Point(236, -2);
+            this.Heading.Location = new System.Drawing.Point(236, 8);
             this.Heading.Name = "Heading";
             this.Heading.Size = new System.Drawing.Size(607, 86);
             this.Heading.TabIndex = 0;
@@ -84,12 +84,11 @@
             this.SubHeading.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.SubHeading.Font = new System.Drawing.Font("Microsoft Sans Serif", 38F, System.Drawing.FontStyle.Bold);
             this.SubHeading.ForeColor = System.Drawing.Color.Crimson;
-            this.SubHeading.Location = new System.Drawing.Point(336, 84);
+            this.SubHeading.Location = new System.Drawing.Point(336, 95);
             this.SubHeading.Name = "SubHeading";
             this.SubHeading.Size = new System.Drawing.Size(297, 59);
             this.SubHeading.TabIndex = 1;
             this.SubHeading.Text = "Scoreboard";
-            this.SubHeading.DoubleClick += new System.EventHandler(this.label2_DoubleClick);
             // 
             // HeadingsHolder
             // 
@@ -97,7 +96,7 @@
             this.HeadingsHolder.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.HeadingsHolder.Location = new System.Drawing.Point(-3, 0);
             this.HeadingsHolder.Name = "HeadingsHolder";
-            this.HeadingsHolder.Size = new System.Drawing.Size(1113, 149);
+            this.HeadingsHolder.Size = new System.Drawing.Size(1113, 176);
             this.HeadingsHolder.TabIndex = 2;
             // 
             // label4
@@ -322,9 +321,9 @@
             this.ScoreWrapper.Controls.Add(this.GMughals);
             this.ScoreWrapper.Controls.Add(this.GSpartans);
             this.ScoreWrapper.Controls.Add(this.GAryans);
-            this.ScoreWrapper.Location = new System.Drawing.Point(0, 149);
+            this.ScoreWrapper.Location = new System.Drawing.Point(1, 176);
             this.ScoreWrapper.Name = "ScoreWrapper";
-            this.ScoreWrapper.Size = new System.Drawing.Size(1110, 704);
+            this.ScoreWrapper.Size = new System.Drawing.Size(1109, 676);
             this.ScoreWrapper.TabIndex = 16;
             this.ScoreWrapper.TabStop = false;
             this.ScoreWrapper.Paint += new System.Windows.Forms.PaintEventHandler(this.ScoreWrapper_Paint);
@@ -335,7 +334,7 @@
             this.LiveIndicator.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.LiveIndicator.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Bold);
             this.LiveIndicator.ForeColor = System.Drawing.Color.ForestGreen;
-            this.LiveIndicator.Location = new System.Drawing.Point(636, 88);
+            this.LiveIndicator.Location = new System.Drawing.Point(636, 99);
             this.LiveIndicator.Name = "LiveIndicator";
             this.LiveIndicator.Size = new System.Drawing.Size(71, 51);
             this.LiveIndicator.TabIndex = 15;
@@ -357,6 +356,7 @@
             this.Text = "Sports Meet 2k19";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.SizeChanged += new System.EventHandler(this.Form1_SizeChanged);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form1_KeyPress);
             this.GRajputs.ResumeLayout(false);
             this.GRajputs.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

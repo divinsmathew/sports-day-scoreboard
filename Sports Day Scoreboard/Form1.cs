@@ -40,13 +40,8 @@ namespace Sports_Day_Scoreboard
             GRajputs.Top = (ScoreWrapper.Height / 4) - (GRajputs.Height / 2) + 60;
             GAryans.Top = (ScoreWrapper.Height / 4) - (GAryans.Height / 2) + 60;
             GVikings.Top = (ScoreWrapper.Height / 4) - (GVikings.Height / 2) + 60;
-            GMughals.Top = (ScoreWrapper.Height / 4)  *3 - (GMughals.Height / 2) - 60;
-            GSpartans.Top = (ScoreWrapper.Height / 4)  *3 - (GSpartans.Height / 2) - 60;
-        }
-
-        private void label2_DoubleClick(object sender, EventArgs e)
-        {
-            Environment.Exit(0);
+            GMughals.Top = (ScoreWrapper.Height / 4) * 3 - (GMughals.Height / 2) - 60;
+            GSpartans.Top = (ScoreWrapper.Height / 4) * 3 - (GSpartans.Height / 2) - 60;
         }
 
         private async void Label8_Click(object sender, EventArgs e)
@@ -86,8 +81,14 @@ namespace Sports_Day_Scoreboard
         }
 
         private void ScoreWrapper_Paint(object sender, PaintEventArgs e)
-        {   
-           // ScoreWrapper.Graphics.Clear(box.Parent.BackColor);
+        {
+            e.Graphics.Clear(ScoreWrapper.Parent.BackColor);
+        }
+
+        private void Form1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Escape)
+                Environment.Exit(0);
         }
     }
 }
