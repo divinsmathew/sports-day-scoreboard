@@ -1,5 +1,5 @@
 # Overview
-A simple big-screen scoarboard app that updates live scores form a hosted CSV file. Update the CSV source link here and get the live scores refreshed every 10 seconds. Application is configured for tracking scores of five team/entities. Feel free to modify this and/or raise a PR. Press `ESC` to close the scoreboard.
+A simple big-screen scoreboard app that updates live scores from a hosted CSV file. Update the CSV source link here and get the live scores refreshed every 10 seconds. Application is configured for tracking scores of five teams/entities by default. Feel free to modify this or raise a PR. Press `ESC` to close the scoreboard.
 
 The CSV should take the following form:
 
